@@ -1,0 +1,76 @@
+				LABORATORIO N°1          
+
+			              CURSO:DESARROLLO DE APLICACIONES WEB AVANZADO
+				      ESTUDIANTE: NOEMÍ YANET YANQUI CUEVA
+
+
+PREGUNTAS
+
+En el ejercicio 5.1 que al ejecutar node hola.js e ingresar a la URL de localhost:8080
+justamente el puerto del servidor en la consola con imprime el mensaje de hola mundo;esto
+se explica porque se importa http , se crea la funcion de manejador que recibe dos parametros y
+dicha funcion muestra en la consola 'Hola mundo' la variable http tiene el método de
+createServidor que le enviamos la variable manejador  y tambien configuramos que el servidor
+estará en el puerto 8080.
+
+Se observa que en el ejercicio 5.7 que al ingresar a la URL en la consola se muestra el mensaje 
+configurado, y que en la página que se ingresó a la URl se ve el mensaje de respuesta.end,es decir
+cuando la respuesta a finalizado se comstrara dicho mensaje
+
+5.8 El ejercicio 5.1 y 5.7 se diferencian en el momento de la creación del servidor en el primero
+se muestra un mensaje sólo en la consola , en cambio en el segundo ejercicio también tenmos respuesta 
+en la página porque también muestr aun mensaje.Aunque el mensaje de console.log se ejecutan dos veces.
+
+5.10 Se observa que muestra un pila de errores, indicando que el archivo bucle.js
+
+6.3 Observamos que se lee un archivo htmlpor medio de la importacion del modulo de fs y la utilizacion
+del metodo .readFile() de modo que el archivo html se muestra en la página.
+
+6.5 La diferencia entre  readFile y readFileSync, el primero accede a un fichero para su lectura y nos 
+entrega el contenido en forma de buffer o en forma de cadena, en cambio el ultimo hace lo mismo pero bloquea
+la ejecución de las siguientes lineas de código hasta que la elctura haya concluido y se tenga el contenido 
+del archivo completo.
+
+7.3 El error que presenta es que la variable arreglo_parametros no está definida,porque en la url no le
+estamos enviando parametros para que pueda pueda continuar la función.
+
+7.5 En esta captura se observa que la variable arreglo_parametros contiene los parametros incluyendo el valor
+de cada parámetro que le enviamos en la url cuya sintaxis siempre se encuentra separada por un& , esta variable
+es un array que contiene cada parametro.
+Parametros es un array que contiene sólo los nombres de los parámetros, sin los valores.
+La variable valores contiene sólo los datos que se asignaba a cada variable de los parámetros.  
+
+7.6 Se observa que el request es la peticion que hace un cliente por medio de la URL, en dicha URL podemos enviar 
+parámetros para darles un tratamiento(podemos hacer diversas cosas enviandole datos) y luego enviar una respuesta
+ por medio del servidor.
+El módulo de http permite transferir datos por medio del protocolo HTTP, permite crear un servidor.
+Este ejercicio se vió que por medio una petición podemos enviar data.
+
+8.3 Se observa que muestra el error que una variable no está definida porque en la url no se le envió los
+parámetros.
+
+8.4 La funcion que nos permite retornar la url es parse_vars()
+
+8.8 Considero que esto puede ser util, cuando el usuario ingresa informacion, 
+de cualquier tipo, esta informacion puede ser utilizada para realizar operaciones
+y nuevamente el resultado de estas operaciones ser enviadas al html que verá 
+el usuario.
+
+9.1 Este ejercicio necesita ejecutar hora.js (que hacen uso de module_hora.js y vista_hora.html)
+9.2 
+9.3 Ejecutar ejercicio3.js (que llama a inicio.html, galeria.html y funcion_ruta.js)
+ 
+////////////////////////////////////////////////////////////////////////////////
+OBSERVACIONES Y CONCLUSIONES
+///////////////////////////////////////////////////////////////////////////////
+->Se aprendió a utilizar el método de createServer, que crea un servidor local en la computadora.
+->Se aprendió que para incluir un módulo se utiliza require('nombredelmodulo'), se vieron los modulos
+http y fs.
+->Se aprendió la utilidad de utilizar node, y que esta funciona como el servidor web, donde le indicamos
+  el puerto por el que va a escuchar, por el metodo .listen(N°_del_puerto)
+->Se observó la utilización de javascript desde el lado del servidor.
+->Se aprendió la sintaxis para la creaión de módulos y la utilidad de este, ya que nos permitirá
+  obtener ciertos resultados, que podran ser visualizados.Para poder utilizar dichos valore del 
+modulo , es necesario que acabando la función se utilice el codigo de module.exports.nombre_de_la_función.
+
+->
