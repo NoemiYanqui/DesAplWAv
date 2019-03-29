@@ -1,0 +1,134 @@
+					LABORATORIO N° 2
+
+
+////////////////////////////////////////////////////////////////////////////////
+PREGUNTAS y RESPUESTAS
+/////////////////////////////////////////////////////////////////////////////////
+
+4.7 se declara una variable que importa el modulo de underscore, después de observa
+que dicho modulo, posee el mpetodo each que recibe una lista y se muestra cada
+elemento de la lista.
+ver captura4.7
+
+4.12 La función muestra el nombre y el id de todos los empleados que tienen como
+atributo designation ==='SSE'
+
+5.5 Se observa la creacion del modulo lib,que contienen el archivo replace, que lo que hace
+es enviarlo dos parametros, un string y un objeto que continen los valores con los que
+se reemplazará.
+ver captura 5.5
+
+6.8 El error visto, es que faltaba la verificacion del email , además se modificó
+el nombre , porque dicho nombre lo reconocía como spam.Se solucionó haendo la verificacion 
+desde el correo, además de cambiar el nombre en el package.json
+ver captura 6.8
+
+6.9 Se observó la importación de nuestra propia librería, primero registrandose y subiendo
+el código a npm.
+ver captura 6.9
+
+7.1 Se ve que la variable nodes es un arreglo de todas las etiquetas tipo button.
+Luego mediante un for se reccorre dicho arreglo y se analiza si tuvo un evento 
+, si sucede el evneto se imprimira You clicked element #(aqui) 
+
+7.2 
+Código
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>  
+<div class="wrap">
+
+    <button>Primer botón</button><br><br>
+    <button>Segundo botón</button><br><br>
+    <button>Tercer botón</button><br><br>
+    <button>Cuarto botón</button><br><br>
+    <button>Quinto botón</button><br><br>
+
+</div>
+
+<script>
+
+    (function init() {
+
+        var nodes = document.getElementsByTagName('button');
+        for (var i = 0; i < nodes.length; i++) {
+            nodes[i].addEventListener('click', function () {
+                console.log('you clicked element #' + i)
+            })
+
+        }
+    })();
+
+</script>
+</body>
+</html>
+
+7.3 En la funcion printing()lo que  hace es imprimir los números del 1 al 4, sin embargo
+el primero en mostrarse es el 1, 4,3,y2 esto es debido a que la funcion setTimeout 
+se ejecuta despues , el que imprime 3 se hace al pasar 0 milisegundos , en cambio el 2 se 
+imprime utlimo puesto que se ejecuta pasado 1 segundo.
+ver CAPTURA7.3.png
+
+7.5 La utilidad sería cuando queremos ver que dos valores tengan valoresno nulos,
+ejemplo cuando se envia desde un fomulario con el ruc, este dato puede ser verificado
+su existencia por medio de un metodos, y si ambas casosa se cumplen se guarda dicho
+ruc porque es válido.
+ver Captura7.5.png
+
+7.7 Se observó que lo que retorna de una funcion se pude guardar en una variables, 
+pero para poder mostrar el valor de esta variable, no bastará con imprimir la variable
+sino var();dentro de un console.log
+
+
+7.10 Se vio la herencia parasitaria,se ve que programador hereda de persona, , de modo que
+lo que retorneen la funcion de programador se creo una variable de tipo persona, y esta 
+variable será  la que retorne la funcion de programador incrementandoles el atributo de 
+especialidad.
+ver Captura 7.10
+
+8.2 Obtener el numero mayor de dos numeros ejecutar index.js
+ver Ej Suma.png
+
+8.3 Obtener álbum favorito ejecutar index.js
+ver EjercicioAlbumFavorito
+
+8.4 Función que permite hacer sumas de muchas variables ejecutar index.js
+ver Ej Suma
+
+8.5 Función que devuelve el álbum más tocado de una serie de reproducciones ejecutar index.js
+ver el masTocado
+
+8.6 Funcion numeroPrimo ejecutar index.js
+ver ej NroPrimo
+
+8.7 ejecutar QuickSort index.js
+ver Ej Quicksort.png
+
+
+//////////////////////////////////////////////////////////////////////////////////7
+OBSERVACIONES Y CONCLUSIONES
+/////////////////////////////////////////////////////////////////////////////////
+
+Se observa que gracia al modulo de underscore instalado, se puede utilzar los metodos
+de each , map, chain, pluck
+
+Se aprendió que podemos crear una libreria y utilizarla en nuestro proyecto
+se observó el typeof que devuelve el tipo de dato de una variable, y lo devuelve en una
+cadena.
+
+se observó la reduccion de codigo u optimizacion en senticas if , y sentencias if else, en 
+el primero se usaba el operador && en el segundo se usó el operador ||.
+
+se aprendio que en js no existen palabras reservadas de public u otros, no hay clases
+solo objetos que heredan de otros.
+
+Este laboratorio se realizaron algoritmos,tambien se vió que en javascript hay tres maneras
+de implementar la herencia, herencia por concatenacion. por delegacion y finalmente funcional.
+

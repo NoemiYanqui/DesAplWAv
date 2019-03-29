@@ -1,0 +1,17 @@
+{
+  "name": "tecsup2019yanquicueva",
+  "version": "1.0.0",
+  "description": "lab2 DAWA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lab2"
+  ],
+  "author": "Noemi Yanqui Cueva",
+  "license": "ISC",
+  "dependencies": {
+    "underscore": "^1.9.1"
+  }
+}
