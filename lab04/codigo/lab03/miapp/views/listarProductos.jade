@@ -1,0 +1,34 @@
+html
+    head
+        meta(name='viewport', content = 'width=device-width, initial-scale=1')
+        title Sistema
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
+    body
+block content
+    h2.form-signin-heading Productos
+    h5  
+        a(href="/") Home 
+    br
+    br
+    table.table
+                    thead
+                        tr
+                            th ID
+                            th Nombre
+                            th Descripcion
+                            th Precio
+                            
+                    tbody
+                        for item in data
+                            tr
+                                td= item._id
+                                td= item.nombre
+                                td= item.descripcion
+                                td= item.precio
+                                td 
+                                    a(href="/producto/update/#{item._id}").btn.btn-large.btn-success Editar
+                                    a(href="/producto/delete/?_id=#{item._id}").btn.btn-large.btn-danger Eliminar
+    
+    a(href="/producto/create").btn.btn-large.btn-primary Crear nuevo Producto
+    
+    

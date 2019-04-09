@@ -1,0 +1,49 @@
+Laboratorio :4 							CURSO:DAWA
+Estudiante: Noemi Yanet Yanqui Cueva
+
+3.5 	Estamos creando un tratamiento de datos para nuestra colección producto a 
+	través de las cuatro operaciones principales del CRUD, indique que líneas 
+	corresponden a cada una de estas. 
+   	Create a la creación de un documento.
+        Update a la actualización de un producto.
+        Delete a la eliminación de un producto.
+	Show para obtener los datos de un producto o listar un producto.
+
+3.10	Se adjuntas capturas del CRUD mediante postman
+	CrearProducto.png
+	UpdateProducto.png
+	EliminarProducto.png
+	listarProducto.png
+3.15	Se adjunta captura donde se muestra la tabla básica
+3.18	Se adjunta captura donde se muestra la tabla con los valores de los productos
+	por medio de la petición get.
+3.19	Se adjunta captura donde se implementa modelo de user y su acceso por medio de
+	un login.
+3.20	formulario del crud de la tabla de productos.
+
+Para ver CRUD de productos , ejecutar lab10.js
+
+
+OBSERVACIONES
+//////////////////////////////////////////////////////////////////////////////////
+
+Se observó que para que las plantillas en formato .jade se reconozcan en el archivo 
+ejecutble debemos utilizar app.set('view engine', 'jade'), es decir a nuestra variable
+que utiliza express.
+
+
+
+
+CONCLUSIONES
+//////////////////////////////////////////////////////////////////////////////////
+Se aprendió a realizar un CRUD , con node.js Express, y mongo, por medio de la inatlacion 
+de los paquetes de mongoose.
+SE vió cómo express permite realizar direccionamiento y middleware, de modo que 
+a través de un middleware se puede realizar distaitnas cosas con el request y el response
+Se vió que en la utilizacion de .jade es importante que el código esté identado.
+Se aprendió queMongoose es una herramienta de modelado de objetos MongoDB diseñada 
+para trabajar en un entorno asíncrono se utilizó para poder conectarnos a la base 
+de datos y hacer consultas.
+Body-parser es un middleware de análisis del cuerpo de Node.js. analiza los 
+cuerpos de solicitud entrantes en un middleware antes que sus manejadores, disponible
+debajo de la req.body propiedad.

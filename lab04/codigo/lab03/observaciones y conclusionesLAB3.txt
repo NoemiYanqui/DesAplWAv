@@ -1,0 +1,48 @@
+				LABORATORIO N°3
+/////////////////////////////////////////////////////////////////////////////
+Preguntas y Respuestas
+////////////////////////////////////////////////////////////////////////////
+
+2.13 Los cambios que se realizaron al utilizar los middlewares, para capturar
+la misma URL, pero con diferentese métodos HTTP, aqui observamos que express
+nos permite mostrar los mensajes a las peticiones hattp, los que nos permite 
+es realizar determinada accion ante una ruta y un tipo de petición http.
+
+2.15 Instalacion de httpRequester, no lo hice, porque ya tenia instalado
+postman y allí pude pobrar las distintas peticiones http
+ver captura 2.12
+
+2.24 ver captura 2.22 y captura 2.23
+2.25 Para vver el error 404
+Ver captura 2.25
+
+//////////////////////////////////////////////////////////////////////////////
+Observaciones y Conclusiones
+//////////////////////////////////////////////////////////////////////////////
+
+Se aprendió que por medio de Express se realizaron middlewaers, que son 
+funciones que acceden al request y al response, es decir qué hacer con las
+solicitudes y respuestas de la aplicación.
+
+Se observó que dentro de un middleware se puede ejecutar cualquier código, realizar
+cambios en los request y response, finalizar el solicitud de req y res , o también 
+invocar un siguiente middleware.
+
+Se observó que para ver la carga de los archivos de una carpeta, se realiza
+por medio de ---.use(express.static('nombre_De_la_carpeta'))
+
+Se observó que se pueden cargar rutas por medio de crear prefijos de rutas,es 
+decir que antes de ingresar la ruta del archivo de imagen, stylesheet y javascript
+e inmediatamente despues de la ruta del dominio y puerto , se puede ingresar
+aquello que enmascaramos como se ve en la captura 2.23
+
+Se observó la existencia de req, res y next y el argumento next permite devolver
+que su utilidad es cuando un middleware no finaliza el ciclo de solicitudes y respuestas
+entonces se invoca next()para pasar el control a la siguiente funcion de middelware, en 
+caso de no hacerse esto la solicitud quedará colgada. 
+Se observó la existencia de middleware de errores y que este debe estar casi al final
+del código cuando se trata del error 404.
+
+Se observó que el middleware de error , para controlar el error 500, que 
+se declara igual que de el error 404 , sin embargo añadiendo el err.stack
+el cual nos indica el error que ha sucedido. 
