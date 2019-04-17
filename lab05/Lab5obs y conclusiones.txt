@@ -1,0 +1,67 @@
+Laboratorio :5 							CURSO:DAWA
+Estudiante: Noemi Yanet Yanqui Cueva
+
+2.7 	Envío de datos del formulario.
+2.14	Se adjunta captura de que se guarda en la base de datos.
+3.4	Se adjunta captura de inservcion de usuario y a la vez se muestra en la pantalla de ambos ventanas
+ 	en tiempo real
+3.7 	Se adjunta captura de insercion de usuario y a la vez se muestra en la pantalla de ambos ventanas
+ 	en tiempo real además de que se ve el listado de todos los usuario existentes en la bd.
+4.6 	Se adjunta captura donde se muestra que al actualizar informacion en un cliente y guardar dicha actualizacion ,
+	esto se muestra en ambas ventanas.
+5.5 	Se adjunta captura donde se muestra la eliminacion de un registro.
+TAREA:
+-->Alerta de Notificación .
+Se adjunta Captura con el nombre NotificacionTarea
+
+-->Mediante jQuery, añadir un efecto para que el texto de una fila modificada recientemente (tanto creada como actualizada)
+parpadee de un color a otro, mostrándonos que registro ha variado. 
+Se adjunta captura con el nombre IntermitenteTarea
+
+-->Modificar el formulario para que acepte un combobox (select) con las opciones Si y No, y que estas se guarden en la base
+ de datos como un booleando equivalente a True y False (respectivamente)
+Se adjunta captura con el nombre ComboboxTarea y ComboboxTarea2
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+OBSERVACIONES
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Se observó la creación de dos archivos  server.js , aqui haremos las configuraciones del servidor y app.js 
+que representará el cliente.
+Se  observó que al capturar el envio del formulario, dicho envio sera redirigido a socket.io, por medio del 
+evento submit del formulario declarado.
+En jquery se vió el event  preventDefault() detienen la accion predeterminada de un elemento pra que no ocurra.
+se ve que despues de este evento se creq un objeto con nombre data, luego se verifica si el input del id se encuentra vacio entonces semostrara un alerat 
+El evento enfoque se produce cuando un elemnto se enfoca, es decir cuando se selecciona con un clic del raton 
+
+Se observó que cuando se reciben datos de un servidor web , estos datos son siempre una cadena, y
+utilizamos JSON.parse() de ese modo los datos se convierten en un objeto de javascript , por ello utilizamos JSON.parse(); asimismo se ve que 
+como el servidor hace us de adtos en cadena y el cliente o navegador le envía o emit datos tipo objeto JAVASCRIPT, se debe 
+convertir a cadena por medio de JSON.stringify()
+
+Se observó que que tanto los métodos .on() y .emit() de un socket.io reciben dos parametros, el 1er parametro
+es el nombre (que debe ser el mismo identificador tanto del servidor como el cliente) y el 2do parámetro
+es un callback, en éste se pueden utilizar otros .emit() según se requiera.  
+
+CONCLUSIONES
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->	Se aprendió que socket.io es un liberia que permite la comunicacaion en tiempo real , 
+	bidireccional y basado en eventos entre el navegador y el servidor, que hace uso de un servidor node js y javacript
+-->	Se aprendió que para realizar una conexion con socket .io, desde el lado del cliente bastará
+	con crear un variable a la cual se le asignara el método io(); dn cambio desde el lado de servidor
+	se crea una variable que importa socket.io y ademas utilizará las perticiones hhtp por medio 
+	de express.
+-->	Se aprendió que la funcionalidad de los métodos utilizados por sockert .io seria así:
+	on() esta escuchando tanto desde el lado del servidor o el cliente y si se escucha un determinado
+	nombre de la accion a realizar se hará
+	.emit() se esta  enviando un mensaje que alguien tendrá que escuchar(servidor o cliente).
+--> 	Se aprendió por ejemplo que cuando un cliente llena el formulario toda la ibfom¿rmacion se 
+	guarda en un objeto entonces desde el lado del cliente se envia el nombre de la accion y dicho objeto
+	entonces desde el lado del servidor  esta escuchando por medio de .on y tiene varias acciones
+	para escuchar entonces si coincide con el nombre de la accion , se proderá a ahcer usp del modelo
+	de user y acceder a su metodo ya sea create, update, delete o show , entonces alli se hará los 
+	procedimientos con la BD pero tambien el servidor debe emitir ahora un mensaje de lo que se hara, 
+	entonces nuevamente el cliente estara escuchando al servidor y pues aqui vienen la parte dinámica
+	con jquery, la insercion de las filas etc.
+--> 	Se hizo uso de mongoose que nos permite modelar por medio de eschema, y la conexion a la 
+	BD se hizo pasandole un URL tambien diciendole el nombre de la base de datos.
+
+

@@ -8,26 +8,40 @@ user= require('./models/user');
 
 app.set('view engine','jade');
 app.use('/static', express.static('public'));
-app.get('/',function (req,res) {
-  res.render('main');
-});
+
+
 
 io.on('connection',function(socket){
   console.log('Usuario conectado!');
 
   socket.on('crear',function(data){
     user.create(data,function(rpta){
-      io.emit('nuevo',rpta);
+      io.emit('nuevo', {rpta, mensaje: 'Usuario creado correctamente'});
     });
     console.log(data);
   })
+  
+  user.show(function(data){
+    socket.emit('listar',data);
+  });
+  socket.on('actualizar',function(data){
+    user.update(data, function(rpta){
+      io.emit('nuevo', {rpta, mensaje :'Usuario actualizado correctamente'});
+    });
+  });
+  socket.on('eliminar',function(data){
+    user.delete(data,function(rpta){
+      io.emit('borrado',rpta);
+    });
+  });
   socket.on('disconnect',function(){
     console.log('Usuario desconectado!')
   })
 })
-user.show(function(data){
-  io.emit(´'listar',data);
+app.get('/',function (req,res) {
+  res.render('main');
 });
+
 http.listen(port, function(){
   console.log('Servidor conectado en *:'+ port);
 })
