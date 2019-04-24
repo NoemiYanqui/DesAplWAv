@@ -26,7 +26,7 @@ block content
                                 td= item.descripcion
                                 td= item.precio
                                 td 
-                                    a(href="/producto/update/#{item._id}").btn.btn-large.btn-success Editar
+                                    a(href="/producto/update/?_id=#{item._id}").btn.btn-large.btn-success Editar
                                     a(href="/producto/delete/?_id=#{item._id}").btn.btn-large.btn-danger Eliminar
     
     a(href="/producto/create").btn.btn-large.btn-primary Crear nuevo Producto

@@ -13,7 +13,6 @@ mongoose.connect('mongodb://localhost/test')
   array :[],
   ofString :[String],
   nested:{stuff:{type:String, lowercase:true, trim:true}}
-
 });*/
 
 var producto_schema = new Schema({
@@ -69,12 +68,12 @@ module.exports = {
       if (err) {
         res.status(500).send('Algo salio mal!!!')
       }else{
-          
+
       //  res.send("Producto creado correctamente"),
         res.redirect('/producto')
       }
     })
-   
+
   },
   update: function (req, res) {
     prod_model.findOne({_id: req.query._id}, function (err, producto) {
@@ -99,4 +98,3 @@ module.exports = {
     });
   },
 };
-

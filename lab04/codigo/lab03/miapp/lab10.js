@@ -17,6 +17,8 @@ app.post('/producto/update', producto.update);
 app.get('producto/update/:id',producto.ShowForId);
 app.post('/producto/delete', producto.delete);
 app.get('/producto/delete', producto.delete);
+
+
 app.get('/producto/create',(req,res)=>{
     res.render('productoCreate')
 })
@@ -34,3 +36,8 @@ app.get('/table', function (req, res) {
 app.listen(9090, function () {
     console.log('Iniciando!')
 })
+
+prod_model.findOne({_id: req.query._id}, function (err, producto) {
+    producto.remove();
+  //  res.send({status: true})
+    res.redirect('/producto')
