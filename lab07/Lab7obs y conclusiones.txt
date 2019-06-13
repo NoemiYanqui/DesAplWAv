@@ -1,0 +1,35 @@
+ESTILOS CON REACT Y BOOTSTRAP
+
+Laboratorio :7 							CURSO:DAWA
+
+Estudiante: Noemi Yanet Yanqui Cueva
+
+1.9 Se adjunta captura donde se muestra el header y foter gracias a la importacion del Layout
+2.4 Se adjunta captura donde se muestra el Carousel con los slides.
+    Se adjunta captura de singin y singout
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+OBSERVACIONES
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Se observó que en los componentes <Route> que posee el parámetro path , pero también podemos hacerlo
+se puede hacer este parametro y sólo indicarle component de manera que sino existe las routes anteriores éste será 
+el componente por defecto que se mostrará.
+Se observó la utilizacion de LocalStorage que es el almacenamiento local del navegador, donde se pueden alamcenra
+valores de tipo clave-valor 
+Se observó que react-bootstrap funciona 
+Se utilizó boostrap para la maquetación
+ 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+CONCLUSIONES
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->	Se aprendió que par utilizar bootstrap , debemos instalar , además tambien debe instalarse el complemento
+del mismo.
+-->	Se observó como crear un layout, o plantilla constante, porque el header y footer serán repetitivas en distintas 
+páginas, de modo que se creó como un componente que incluian ambas para luego ser insertadad en el App.js 
+--> Se aprendió a elaborar componentes usando bootstrap, de manera que creamos un formulrio para el inicio de 
+sesion a través de boostrap; creando también un Carousel importando este componente y usando los nombres de las clases
+-->Se aprendió a Usar el componente Fragmente que contendria al header y footer , en el metodo return del componente
+Layout.
+-->React provee documentación para poder ver los componentes que se pueen utilizar, incluse  con ejemplos.
+--> Se hizo uso del localStorage para remover o elimar los datos de id , nombre y token del usuario que inicio el sesión, 
+datos que se almacenaron cuando se inicio sesion por medio del método setItem() y también el método RemoveItem.
+  
