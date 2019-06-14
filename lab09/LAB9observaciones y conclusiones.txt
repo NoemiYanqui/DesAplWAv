@@ -1,0 +1,40 @@
+					LABORATORIO N° 9
+					SPINNERS Y SUBPAGINAS
+Estudiante: Noemi Yanet Yanqui Cueva
+
+Se adjunta capturas :
+-->  VistaChat
+--> 3.1. VistaEdit
+--> 2.4. VistaProfile
+--> VistadeAlerta
+
+//////////////////////////////////////////////////////////////////////////////////7
+OBSERVACIONES Y CONCLUSIONES
+/////////////////////////////////////////////////////////////////////////////////
+
+--> Se observa la instalación de la libreria morgan en el dawa_api, esto nos permitirá 
+ver el IP, el método de consulta y el tiempo que duró este; por medio de 
+:method; :remote-addr ; :url, :response-time.
+
+-> Se realizó las Vistas del perfil, para ello se configuró las rutas en el App.js;
+es importante que el orden(dicah importacaion debe ser antes del NotFound)
+
+-->Se observó que la vista de profile proveerá dos rutas, la primea de profile, y profile/edit
+con al intencion de que esté mas ordenado el código; además se creó los componentes de
+ProfileEdit y ProfileDetails; estos componentes muestran vistas con bootstrap
+e iconos por medio de FontAwesomeIcon.
+
+->Se hizo nuevmanete uso de localStorage para guardar el usuario y aemas se configuran las acciones
+cada vez que el componente se ha montado por medio del ComponentDidMount
+
+--> Se observó que la imagen que aparece de perfil es proveida por avatar que recibe como 
+parametro un email.
+--> Se observó que en el componente ProfileEdit.js, se configuró un formulario en esta vista
+y que se le agrego tanto a los inputs y label la accion de onchange que llama a las acciones
+que setea los estados en cuanto a que estos valores pueden cambiar.
+
+--> Se aprendió cómo se envia datos al servidor, gracias a axios que nos permite acceder al
+servidor por medio de una URL
+--> Se aprendió que para crear un componente de carga se hizo con https://loading.io/css/
+que nos provee muchos diseños admeasn del codigo html y css; dicho html debe insertarse dentro de
+un Fragment
