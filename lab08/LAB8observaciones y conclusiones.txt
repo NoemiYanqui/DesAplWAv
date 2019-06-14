@@ -1,0 +1,21 @@
+					LABORATORIO N° 8
+CHAT CON BOOSTRAP, DEPLOY NOW.SH
+Estudiante: Noemi Yanet Yanqui Cueva
+
+
+//////////////////////////////////////////////////////////////////////////////////7
+OBSERVACIONES Y CONCLUSIONES
+/////////////////////////////////////////////////////////////////////////////////
+
+--> Se observó la utilizacion de las dependencias de la libreria fortawesome, que es una
+librería que nos permite utilizar iconos,la utilizacion de Socket.io para conectar el chat y md5 
+par cifrar el correo, se uso gravatar.
+--> Se vio la libreria react-helmet que permite modificar las cabeceras de la ruta abierta, modificar estilos globales
+ademas tambien es utilizado para el  SEO, se observó que se cambio el titulo por medio de esta e inclusive el
+estyle.
+--> now-build nos permmitirá realizar el deploy, de modo que aprendimos que para ejcutarlo
+hicimos uso de un archivo .json donde se muestra rutas y cabeceras y al ejecutar el comando 
+now nos pide un correo de autentificacion, esto generará un archivo auth.json dentro 
+de la carpeta now, dichos archivos se crearan en la carpeta del usuario que estemos trabajando.
+ 
+--> Se observó que gravatar proporciona imagenes de perfil.
