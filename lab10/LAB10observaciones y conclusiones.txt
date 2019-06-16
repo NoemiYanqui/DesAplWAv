@@ -1,0 +1,30 @@
+					LABORATORIO N° 10
+					REDUX
+Estudiante: Noemi Yanet Yanqui Cueva
+
+Se adjunta capturas :
+--> 5.4.gif del habilitacion de opcion de mi perfil
+--> 6.3 gif del las opciones de barra de navegacion 
+	cuando un usuario esta o no logeado.
+
+//////////////////////////////////////////////////////////////////////////////////7
+OBSERVACIONES Y CONCLUSIONES
+/////////////////////////////////////////////////////////////////////////////////
+
+--> Se observa la instalación de la libreria morgan en el dawa_api, esto nos permitirá 
+ver el IP, el método de consulta y el tiempo que duró este; por medio de 
+:method; :remote-addr ; :url, :response-time.
+--> Se realizò la instalacion de redux; y sus complementos de react-redux y redux-thunk.
+--> Se instalò Redux DevTools que es una extension 
+--> Se importaron y trabajaron con los componentes Porvider, createStores, applyMiddleware
+compose y thunk y se vio la creacion del archivo reducer.js que importa las archivso de 
+actionTypes y utility ; ademas reducer posee los estados iniciales  de token, email, userId,
+userName, error y loading , ademas de los mètodos de authStart y authSuccess. authFail, 
+AuthLogout ; viendo que en cada mètodo siempre enviamos un estado y  una accion
+--> Los mètodos configurados en redux demuestran que siempre devuelve un estado y los 
+valores de las variables son actualizadas , segun el mètodo a utilizarse.
+--> Se viò que uno de los principios de redux es que un componente cambia de estados por medio
+de acciones.
+--> Se observò la configuraciòn dispatcher.
+--> Se vio que es necesario conectar los componentes de React con redux , que se
+hizo por medio de la funcion Conec tar que une estados con dispatchers
